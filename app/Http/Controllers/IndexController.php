@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Movie;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
     function Index () {
-        return view('index');
+
+        $data = Movie::all();
+
+
+        return view('index', ["movies" => $data]);
     }
 }
