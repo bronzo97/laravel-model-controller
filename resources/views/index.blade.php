@@ -9,27 +9,16 @@
 </head>
 <body>
         <header>
-            <nav>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">Movies</div>
-                        <div class="col">
-                            <ul>
-                                <li>Menu</li>
-                                <li>Contacts</li>
-                                <li>About us</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+            <div class="conteiner d-flex justify-content-center">
+                <h1 class="text-center m-5">Movies</h1>
+            </div>
         </header>
-        <main>
-            <div class="container">
+        <main class="h-100">
+            <div class="container h-100">
                 <div class="row">
                     @foreach ($movies as $movie)
-                        <div class="col-3 gap-1">
-                            <div class="card" style="width: 18rem;">
+                        <div class="col-3 p-3">
+                            <div class="card shadow p-5 d-flex text-center" style="width: 18rem;">
                                 <div class="card-body">
                                     <h5 class="cart-title">{{ $movie["title"] }}</h5>
                                     <p class="card-text">Vote:{{ $movie["vote"]}}</p>
@@ -40,6 +29,8 @@
                 </div>
             </div>
         </main>
-        <script src="{{ asset('js/app.js') }}"></script>
+
+
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

@@ -1,3 +1,25 @@
 body {
-    background-image: radial-gradient(circle, #2e00ff, #1a1cef, #0427de, #002dcd, #0031bb);
+    background-image: url("https://wallpaper.dog/large/20493433.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // background-image: radial-gradient(circle, #2e00ff, #1a1cef, #0427de, #002dcd, #0031bb);
+}
+
+h1 {
+    background: rgb(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.9px);
+    -webkit-backdrop-filter: blur(10.9px);
+    padding: 1rem;
+    color: rgb(41, 41, 41);
+}
+
+.shadow {
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.9px);
+    -webkit-backdrop-filter: blur(10.9px);
+    color: #000;
 }
